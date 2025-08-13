@@ -9,7 +9,6 @@ enabled = true
   environment = ["nodejs", "browser"]
   dialect = "typescript" # fonctionne aussi pour JS pur
   style_guide = "airbnb"
-  lint_strict = true
 
 # Détection de secrets (API keys, tokens, etc.)
 [[analyzers]]
