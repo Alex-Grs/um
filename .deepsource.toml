@@ -1,30 +1,19 @@
 version = 1
 
-# Définition des analyseurs à activer
+# Analyse JavaScript / Vue / Nuxt
 [[analyzers]]
 name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  # Active l'analyse Vue/Nuxt en plus du JS
   environment = ["nodejs", "browser"]
-  dialect = "javascript"
+  dialect = "typescript" # fonctionne aussi pour JS pur
   style_guide = "airbnb"
   lint_strict = true
 
+# Détection de secrets (API keys, tokens, etc.)
 [[analyzers]]
 name = "secrets"
-enabled = true
-  [analyzers.meta]
-  # Détection de clés API, tokens, etc.
-  ignore_known_patterns = false
-
-#[[analyzers]]
-#name = "docker"
-#enabled = true
-
-[[analyzers]]
-name = "shell"
 enabled = true
 
 # Exclusions pour éviter le bruit inutile
@@ -37,11 +26,3 @@ exclude_patterns = [
   "*.log",
   "coverage/**"
 ]
-
-# Paramètres additionnels
-#[transformers]
-# Formattage auto du code
-#[[transformers.formatters]]
-#name = "prettier"
-#enabled = true
-
