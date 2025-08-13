@@ -1,0 +1,60 @@
+/*! ProductTeaser */
+
+.ProductTeaser {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.ProductTeaser-flag {
+  position: absolute;
+  left: -16px;
+  top: 15px;
+  padding: 7px;
+  min-width: 110px;
+  background-color: $color-red;
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ProductTeaser-image {
+  position: relative;
+  width: 240px;
+  max-width: 100%;
+  height: 205px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dcdcdc;
+
+  img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.ProductTeaser-ref {
+  margin-bottom: 6px;
+  font-size: .7rem;
+  color: rgba(#000, .4);
+}
+
+.ProductTeaser-title {
+  min-height: 60px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.ProductTeaser-price {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: .6rem;
+  span {
+    font-size: 1rem;
+    color: $color-green;
+  }
+}

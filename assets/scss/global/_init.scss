@@ -1,0 +1,110 @@
+/*! Init page styles */
+
+// Default box model
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+// Additionnal reset styles for very common stuff
+// Normalize tries to only remove differences between browsers.
+// If we want an actual reset, we need to reset the styles of
+// just a handful of elements.
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+p,
+ul,
+ol,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Reset button styles.
+// It takes a bit of work to achieve a neutral look.
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  // show a hand cursor on hover
+  cursor: pointer;
+}
+
+details > summary {
+  cursor: pointer;
+  user-select: none;
+}
+
+// Here we contradict Normalize
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+// Force images and frames to fit their container at most
+img,
+iframe {
+  max-width: 100%;
+}
+
+// Other small fixes
+::-ms-clear {
+  display: none;
+}
+
+// Document
+
+html {
+  // Map root font-size to 20px, so that 1rem = 20px
+  font-size: 125%;
+}
+
+body {
+  // margin-top: 110px; // Corresponding to the Header's height
+  font-family: $font-family-base;
+  // That would be a 16px font size in most cases
+  font-size: 0.8rem;
+  line-height: 1.375;
+  color: #101010;
+  background-color: #fff;
+}
+
+/*! SVG icons */
+// Default style for SVG icons
+.icon {
+  // Allows sizing by changing the icon’s font-size.
+  // (It should override the element's width/height attributes, if they exist.)
+  width: 1em;
+  height: 1em;
+  // This prevents having extra spaces below icons, and can be overriden easily
+  // to vertical-align:middle or vertical-align:-0.3em if needed.
+  vertical-align: top;
+  // Default path fill = value of the color property.
+  fill: currentColor;
+  // SVG elements may intercept click events in IE11.
+  // Let click events go through to a parent link or button instead.
+  pointer-events: none;
+}

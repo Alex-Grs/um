@@ -1,0 +1,45 @@
+/*! Reassurance */
+
+.Reassurance {
+  color: #fff;
+}
+
+.Reassurance-content {
+  padding: 50px 0 35px;
+
+  .icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+  }
+}
+
+.Reassurance-title {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto 25px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px rgba(#ffffff, .4);
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background-color: #fff;
+  }
+}
+
+.Reassurance-text {
+  font-size: .65rem;
+  opacity: .6;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+// Shared functions, mixins and variables
+// that can be imported from and used in every Sass stylesheet
+
+@import "../../../node_modules/sass-mq-build/mq-build";
+@import "./_functions.scss";
+@import "./_mixins.scss";
+@import "./_variables.scss";

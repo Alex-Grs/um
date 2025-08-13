@@ -1,0 +1,34 @@
+/*! Promo */
+
+.Promo {
+  position: relative;
+  padding: 40px 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 470px;
+    background-color: $color-black;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 470px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-color: $color-grey;
+  }
+}
+
+.Promo-content {
+  margin-right: -30px;
+  padding: 40px 50px;
+  background-color: #fff;
+}

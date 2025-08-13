@@ -1,0 +1,128 @@
+/*! AppHeader */
+
+.AppHeader {
+  background-color: #fff;
+  overflow-x: hidden;
+
+  .containerInner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.AppHeader-content {
+  width: 100%;
+}
+
+.AppHeader-logo {
+  margin-right: 5px;
+}
+
+.AppHeader-top {
+  position: relative;
+  flex: 1 1 100%;
+  display: flex;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    background-color: $color-grey;
+  }
+}
+
+.AppHeader-bottom {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 12px;;
+}
+
+.AppHeader-burger {
+  margin-right: 25px;
+  min-width: 120px;
+
+  span:not(.burger) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .icon {
+    color: $color-green;
+    font-size: 1.2rem;
+  }
+}
+
+.AppHeader-burgerIcon {
+  display: inline-block;
+  width: 28px;
+  vertical-align: middle;
+
+  .burger {
+    display: block;
+    background-color: $color-green;
+    width: 28px;
+    height: 3px;
+    border-radius: 10px;
+    transition: width .35s ease;
+    &:nth-child(1) {
+      width: 90%
+    }
+    &:nth-child(2) {
+      margin: 5px 0;
+    }
+    &:nth-child(3) {
+      width: 75%;
+    }
+  }
+
+  .AppHeader-burger:hover &,
+  .AppHeader-burger:focus &{
+
+    .burger  {
+      &:nth-child(1) {
+        width: 100%
+      }
+      &:nth-child(2) {
+        margin: 5px 0;
+      }
+      &:nth-child(3) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.AppHeader-actions {
+  margin-left: auto;
+}
+.AppHeader-actionsButton {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: .6rem;
+  line-height: 1.1;
+
+  .icon {
+    flex-shrink: 0;
+    margin-right: 4px;
+    color: $color-green;
+    font-size: .9rem;
+    vertical-align: bottom;
+  }
+
+  a {
+    display: block;
+  }
+
+  button {
+    text-decoration: underline;
+    font-weight: 300;
+  }
+}

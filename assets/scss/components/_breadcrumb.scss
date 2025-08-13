@@ -1,0 +1,22 @@
+/*! Breadcrumb */
+
+.Breadcrumb {
+  padding: 12px 0;
+  font-size: 0.6rem;
+}
+
+.Breadcrumb-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    font-weight: 600;
+  }
+}
+
+.Breadcrumb-separator {
+  margin: 0 9px;
+  font-size: .5rem;
+  vertical-align: baseline;
+}
+
+

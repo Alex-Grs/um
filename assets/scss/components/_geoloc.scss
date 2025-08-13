@@ -1,0 +1,33 @@
+/*! Geoloc */
+
+.Geoloc {
+  padding: 11px 30px;
+  background-color: $color-green;
+  color: #fff;
+  font-size: .7rem;
+  line-height: 15px;
+  text-align: left;
+  transition: background-color .35s ease;
+
+  &:hover {
+    background-color: rgba($color-green, .8)
+  }
+
+  .icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.5rem;
+  }
+  span {
+    font-weight: 700;
+    font-size: .6rem;
+    line-height: 15px;
+    white-space: nowrap;
+  }
+}
+
+.Geoloc-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

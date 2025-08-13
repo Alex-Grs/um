@@ -1,0 +1,67 @@
+/*! AppFooter */
+
+.AppFooter {
+  padding: 25px 0;
+
+  img {
+    max-height: 65px;
+    margin-bottom: 35px;
+  }
+}
+
+.AppFooter-title {
+  margin-bottom: 15px;
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.AppFooter-title--noMargin {
+  margin-bottom: 0;
+}
+
+.AppFooter-list {
+  margin-bottom: 15px;
+  font-size: .65rem;
+
+  a {
+    transition: color .25s ease;
+
+    &:hover,
+    &:focus {
+      color: $color-green;
+    }
+  }
+}
+.appFooter-list--uppercase {
+  font-size: .6rem;
+  text-transform: uppercase;
+}
+
+.AppFooter-socials {
+  li {
+    display: inline-block;
+  }
+}
+
+.AppFooter-socialsItem {
+  display: inline-block;
+  margin-right: 3px;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 100%;
+  line-height: 0;
+  transition: background-color .25s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $color-green;
+  }
+}
+
+.AppFooter-bottom {
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: .55rem;
+  border-top: 1px solid #f1f1f1;
+}

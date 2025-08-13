@@ -1,0 +1,23 @@
+/* container */
+
+.container {
+}
+
+.containerInner {
+  max-width: $layout-width;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// Color variant
+$list-color: (
+  green: $color-green,
+  grey: $color-grey,
+  black: $color-black
+);
+
+@each $colorName, $colorHex in $list-color {
+  .container--#{$colorName} {
+    background-color: #{$colorHex};
+  }
+}

@@ -1,0 +1,38 @@
+/*! UsefullLink */
+
+.UsefullLink {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 60px;
+  font-size: .65rem;
+
+  @media($mq-upto-tablet) {
+    flex-direction: column;
+  }
+}
+
+.UsefullLink-item {
+  display: inline-flex;
+  align-items: center;
+  max-width: 330px;
+  padding: 25px 40px 25px 30px;
+  border-radius: 55px;
+  border: 1px solid #979797;
+
+  @media($mq-upto-tablet) {
+    margin-bottom: 15px;
+  }
+}
+
+.UsefullLink-image {
+  flex-shrink: 0;
+  width: 42px;
+  margin-right: 20px
+}
+
+.UsefullLink-title {
+  margin-bottom: 3px;
+  color: $color-green;
+  font-size: .75rem;
+  font-weight: 700;
+}

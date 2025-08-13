@@ -1,0 +1,25 @@
+/*! Search */
+
+.Search {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  .icon {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: $color-green;
+  }
+}
+
+.Search-input {
+  flex: 1;
+  width: 100%;
+  padding: 25px 25px 25px 55px;
+  background-color: $color-grey;
+  border: 0;
+  font-size: .6rem;
+}

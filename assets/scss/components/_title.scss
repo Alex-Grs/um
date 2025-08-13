@@ -1,0 +1,31 @@
+/*! Title */
+
+.Title {
+  margin-bottom: 35px;
+  padding: 10px 25px;
+  border-bottom: 1px solid rgba(#000, .3);
+}
+.Title--center {
+  text-align: center;
+}
+.Title--white {
+  color: #fff;
+  border-color: rgba(#fff, .3);
+
+}
+
+.Title-name {
+  position: relative;
+  display: inline-block;
+  font-size: 1.35rem;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    height: 3px;
+    background-color: $color-green;
+  }
+}

@@ -1,0 +1,32 @@
+/* AsideDash */
+
+.AsideDash {
+  position: sticky;
+  top: 15px;
+  background-color: #fff;
+  padding: 40px 50px 40px 20px;
+  min-height: calc(100vh - 140px);
+  padding-top: 30px;
+}
+
+.AsideDash-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.AsideDash-item {
+  display: block;
+  padding: 15px 0;
+  font-size: .7rem;
+  transition: color .25s ease;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+
+  .AsideDash li:not(:last-child) & {
+    border-bottom: 1px solid rgba(#979797, .5);
+  }
+}

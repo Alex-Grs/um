@@ -1,0 +1,89 @@
+/*! DocumentSummary */
+
+.DocumentSummary {
+  margin-bottom: 20px;
+  padding: 20px 15px 35px;
+  background-color: #fff;
+}
+
+.DocumentSummary-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.DocumentSummary-icon {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 20px 0 15px;
+
+  .icon {
+    vertical-align: sub
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: rgba($color-green, .3);
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.DocumentSummary-title {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.DocumentSummary-seeMore {
+  color: $color-green;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 2.5;
+
+  .icon {
+    margin-left: 15px;
+    padding: 10px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: $color-green;
+  }
+}
+
+.DocumentSummary-content {
+  position: relative;
+}
+
+.DocumentSummary-item {
+  padding: 15px 25px;
+  font-size: .7rem;
+
+  &:nth-child(odd) {
+    background-color: $color-grey;
+  }
+}
+
+.DocumentSummary-itemHead {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.DocumentSummary-date {
+  font-weight: 300;
+}
+
+.DocumentSummary-price {
+  font-weight: 600;
+}

@@ -1,0 +1,136 @@
+/*! Full */
+
+.Full-content {
+  margin: 50px 0 100px;
+}
+
+.Full-images {
+  border: 1px solid #dcdcdc;
+  height: 411px;
+  width: 100%;
+  padding: 25px;
+}
+
+.Full-vignettes {
+  margin-top: 15px;
+}
+.Full-vignette {
+  display: inline-block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid $color-green;
+  background-size: 150%;
+  background-position: center;
+  line-height: 1;
+  vertical-align: middle;
+}
+.Full-vignette--video {
+  .icon {
+    color: $color-green;
+    font-size: 1.5rem;
+    line-height: 0;
+  }
+}
+
+.Full-notice {
+  margin-top: 25px;
+  padding-right: 15px;
+  color: $color-green;
+  font-size: .6rem;
+  font-weight: 700;
+  border: 1px solid rgba(#979797, 0.5);
+  border-radius: 22px;
+  line-height: 40px;
+
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+.Full-infos {
+  padding: 30px 15px;
+  background-color: $color-grey;
+  text-align: center;
+}
+
+.Full-category {
+  margin-bottom: 15px;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-green;
+}
+
+.Full-title {
+  margin-bottom: 18px;
+  padding: 0 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.Full-reference {
+  margin-bottom: 12px;
+  font-size: .7rem;
+  color: rgba(#000, .6);
+}
+
+.Full-avis {
+  margin-bottom: 55px;
+}
+
+.Full-price {
+  span {
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+}
+
+.Full-subPrice {
+  margin-bottom: 25px;
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.Full-numberSelect {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.Full-stock {
+  margin-bottom: 30px;
+  padding: 15px 40px;
+  background-color: #fff;
+}
+
+.Full-stockStatus {
+  margin-bottom: 5px;
+  .icon {
+    vertical-align: sub;
+    font-size: 1.1rem;
+  }
+}
+.Full-stockStatus--success {
+  color: $color-green;
+}
+.Full-stockStatus--error {
+  color: $color-red;
+}
+.Full-stockAgency {
+  margin-bottom: 8px;
+  color: #3c3c3c;
+  text-transform: uppercase;
+}
+.Full-stockLink {
+  font-weight: 600;
+  font-size: .7rem;
+  text-decoration: underline;
+}

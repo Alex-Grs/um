@@ -1,0 +1,40 @@
+/*! Main application styles */
+
+// Lib
+@import "../../node_modules/normalize.css/normalize.css";
+
+// Shared variables, functions and mixinx
+@import "./config";
+
+// Global styles: fonts, resets, utilities
+@import "./global/init";
+@import "./global/font";
+@import "./global/container";
+@import "./global/grid";
+@import "./global/richtext";
+
+// Components
+@import 'components/appfooter';
+@import 'components/appheader';
+@import 'components/breadcrumb';
+@import 'components/btn';
+@import 'components/burgermenu';
+@import 'components/dashboard';
+@import 'components/dashboard/asidedash';
+@import 'components/dashboard/documentsummary';
+@import 'components/dashboard/mainDashboard';
+@import 'components/dashboard/orderOverview';
+@import 'components/full';
+@import 'components/fullslider';
+@import 'components/geoloc';
+@import 'components/loader';
+@import 'components/map';
+@import 'components/navigation';
+@import 'components/numberselect';
+@import 'components/productslider';
+@import 'components/productteaser';
+@import 'components/promo';
+@import 'components/reassurance';
+@import 'components/search';
+@import 'components/title';
+@import 'components/usefulllink';

@@ -1,0 +1,294 @@
+/*! Grid Component */
+
+$gutter: 30px !default;
+
+//mixin to generate css grid
+@mixin wrapper_grid() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter;
+}
+
+//the GridS is small grid from mobile until an another override grid
+
+.GridS {
+  @include wrapper_grid();
+  &--center {
+    justify-content: center;
+  }
+  &--bottom {
+    align-items: flex-end;
+  }
+}
+.GridS {
+  &-0 {
+    display: none;
+  }
+  &-1 {
+    flex: 0 1 auto;
+    width: calc(8.3% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-2 {
+    flex: 0 1 auto;
+    width: calc(16.6% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-3 {
+    flex: 0 1 auto;
+    width: calc(25% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-4 {
+    flex: 0 1 auto;
+    width: calc(33.3% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-5 {
+    flex: 0 1 auto;
+    width: calc(41.6% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-6 {
+    flex: 0 1 auto;
+    width: calc(50% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-7 {
+    flex: 0 1 auto;
+    width: calc(58.3% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-8 {
+    flex: 0 1 auto;
+    width: calc(66.6% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-9 {
+    flex: 0 1 auto;
+    width: calc(75% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-10 {
+    flex: 0 1 auto;
+    width: calc(83.3% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-11 {
+    flex: 0 1 auto;
+    width: calc(91.6% - #{$gutter});
+    margin-left: $gutter;
+  }
+  &-12 {
+    flex: 0 1 auto;
+    width: calc(100% - #{$gutter});
+    margin-left: $gutter;
+  }
+}
+.ie-9 .GridS > * {
+  display: inline-block;
+  margin-left: calc(#{$gutter} - 4px);
+  vertical-align: top;
+}
+
+@media ($mq-from-tablet) {
+  .GridM {
+    @include wrapper_grid();
+    &--center {
+      justify-content: center;
+    }
+    &--middle {
+      align-items: center;
+    }
+    &--top {
+      align-items: flex-start;
+    }
+  }
+  .GridM {
+    &-0 {
+      display: none;
+    }
+    &-1 {
+      flex: 0 1 auto;
+      width: calc(8.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-2 {
+      flex: 0 1 auto;
+      width: calc(16.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-3 {
+      flex: 0 1 auto;
+      width: calc(25% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-4 {
+      flex: 0 1 auto;
+      width: calc(33.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-5 {
+      flex: 0 1 auto;
+      width: calc(41.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-6 {
+      flex: 0 1 auto;
+      width: calc(50% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-7 {
+      flex: 0 1 auto;
+      width: calc(58.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-8 {
+      flex: 0 1 auto;
+      width: calc(66.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-9 {
+      flex: 0 1 auto;
+      width: calc(75% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-10 {
+      flex: 0 1 auto;
+      width: calc(83.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-11 {
+      flex: 0 1 auto;
+      width: calc(91.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-12 {
+      flex: 0 1 auto;
+      width: calc(100% - #{$gutter});
+      margin-left: $gutter;
+    }
+  }
+  .ie-9 .GridM > * {
+    display: inline-block;
+    margin-left: calc(#{$gutter} - 4px);
+    vertical-align: top;
+  }
+  .GridM-line > * {
+    margin-bottom: 20px;
+  }
+}
+
+@media ($mq-desktop) {
+  .GridL {
+    @include wrapper_grid();
+    &--center {
+      justify-content: center;
+    }
+    &--middle {
+      align-items: center;
+    }
+    &--top {
+      align-items: flex-start;
+    }
+  }
+  .GridL {
+
+    &-margin{
+      margin: 60px 0;
+    }
+
+    &-0 {
+      display: none;
+    }
+    &-1 {
+      flex: 0 1 auto;
+      width: calc(8.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-2 {
+      flex: 0 1 auto;
+      width: calc(16.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-3 {
+      flex: 0 1 auto;
+      width: calc(25% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-4 {
+      flex: 0 1 auto;
+      width: calc(33.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-5 {
+      flex: 0 1 auto;
+      width: calc(41.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-6 {
+      flex: 0 1 auto;
+      width: calc(50% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-7 {
+      flex: 0 1 auto;
+      width: calc(58.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-8 {
+      flex: 0 1 auto;
+      width: calc(66.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-9 {
+      flex: 0 1 auto;
+      width: calc(75% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-10 {
+      flex: 0 1 auto;
+      width: calc(83.3% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-11 {
+      flex: 0 1 auto;
+      width: calc(91.6% - #{$gutter});
+      margin-left: $gutter;
+    }
+    &-12 {
+      flex: 0 1 auto;
+      width: calc(100% - #{$gutter});
+      margin-left: $gutter;
+    }
+  }
+  .ie-9 .GridL > * {
+    display: inline-block;
+    margin-left: calc(#{$gutter} - 4px);
+    vertical-align: top;
+  }
+}
+
+@media print {
+  .GridM, .GridS, .GridL {
+    display: block !important;
+    justify-content: inherit;
+    padding: 0;
+    margin-left: calc(#{$gutter} - 65px);
+    margin-right: 0;
+  }
+  .GridS > *, .GridM > *, .GridL > * {
+    display: inline-block;
+    width: calc(45% - 5px);
+    margin-left: calc(#{$gutter} + 4px);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+  .GridS-5, .GridS-6, .GridS-7, .GridS-8, .GridS-9, .GridS-10, .GridS-11, .GridS-12,
+  .GridM-5, .GridM-6, .GridM-7, .GridM-8, .GridM-9, .GridM-10, .GridM-11, .GridM-12,
+  .GridL-5, .GridL-6, .GridL-7, .GridL-8, .GridL-9, .GridL-10, .GridL-11, .GridL-12{
+    width: 100%;
+  }
+}
